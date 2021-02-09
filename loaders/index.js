@@ -13,7 +13,7 @@ module.exports = async (app) => {
     const passport = await passportLoader(expressApp);
 
     // Load API route handlers
-    //await routeLoader(app, passport);
+    await routeLoader(app, passport);
 
     // Load Swagger
     await swaggerLoader(app);
