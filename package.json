@@ -1,0 +1,41 @@
+{
+  "name": "e-commerce-app",
+  "version": "1.0.0",
+  "description": "E-commerce REST API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-db": "node -r dotenv/config setupDatabase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PupRiku/e-commerce-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PupRiku/e-commerce-app/issues"
+  },
+  "homepage": "https://github.com/PupRiku/e-commerce-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.7.2",
+    "js-yaml": "^4.0.0",
+    "moment": "^2.29.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "pg-promise": "^10.9.2",
+    "stripe": "^8.135.0",
+    "swagger-jsdoc": "^6.0.2",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
