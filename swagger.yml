@@ -94,3 +94,49 @@ paths:
           schema:
             type: object
             items:
+  /products:
+    get:
+      summary: "Get all products"
+      description: "Get all products"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+  /products/{productId}:
+    get:
+      summary: "Get product by ID"
+      description: "Get product by ID"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        404:
+          description: 404 Not Found
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
