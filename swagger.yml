@@ -140,3 +140,126 @@ paths:
           schema:
             type: object
             items:
+  /carts/mine:
+    get:
+      summary: "Loads a user's cart"
+      description: "Loads a user's cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+    put:
+      summary: "Loads a user's cart"
+      description: "Loads a user's cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+    post:
+      summary: "Create a new cart for a user"
+      description: "Create a new cart for a user"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+  /carts/mine/items:
+    post:
+      summary: "Adds an item to a user's cart"
+      description: "Adds an item to a user's cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+  /carts/mine/items/{cartItemId}:
+    put:
+      summary: "Update an item in the cart"
+      description: "Update an item in the cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+    delete:
+      summary: "Removes an item from a user's cart"
+      description: "Removes an item from a user's cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+  /carts/mine/checkout:
+    post:
+      summary: "Checks out the user's cart"
+      description: "Checks out the user's cart"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
