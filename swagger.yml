@@ -263,3 +263,39 @@ paths:
           schema:
             type: object
             items:
+  /orders:
+    get:
+      summary: "Gets all orders for a user"
+      description: "Gets all orders for a user"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
+  /orders/{orderId}:
+    get:
+      summary: "Gets order by order ID"
+      description: "Gets order by order ID"
+      produces:
+        - "application/json"
+      parameters:
+      responses:
+        200:
+          description: 200 Success
+          schema:
+            type: object
+            items:
+        500:
+          description: 500 Internal Server Error
+          schema:
+            type: object
+            items:
